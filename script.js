@@ -54,7 +54,7 @@
 
 
 let input = "This Is RUNCH"
-let flag = false
+let flag = true
 let initialUserInputPosition = 0 - 1
 
 let automaticTypeWriter = () => {
