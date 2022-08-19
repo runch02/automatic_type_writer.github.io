@@ -54,28 +54,28 @@
 
 
 let input = "This Is RUNCH"
-let flag = true
+// let flag = true
 let initialUserInputPosition = 0 - 1
 
 let automaticTypeWriter = () => {
-    if (flag === true) {
+   // if (flag === true) {
         if (initialUserInputPosition >= input.length - 1) {
             document.querySelector("#typing-container").innerHTML = " "
             initialUserInputPosition = 0 - 1
         }
 
         document.querySelector("#typing-container").innerHTML += input[initialUserInputPosition += 1]
-    }
+   // }
 }
-
+/*
 let makeFlagTrue = (keyElement) => {
     if (keyElement.key === "Enter") {
         flag = true
         return flag
     }
-}
+} */
 
-addEventListener("keydown", keyElement => makeFlagTrue(keyElement))
+// addEventListener("keydown", keyElement => makeFlagTrue(keyElement))
 
 let interval = setInterval(() => automaticTypeWriter(), 600)
 
